@@ -1,0 +1,210 @@
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* --- Multiple Backgrounds Header --- */
+.multi-bg-header {
+    /* Simulating multiple backgrounds: gradient / pattern overlay + solid color fallback */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        radial-gradient(circle, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.multi-bg-header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.multi-bg-header p {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* --- Layout Container --- */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- Card Component --- */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 20px;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 8px;
+}
+
+/* --- Rounded Corners --- */
+.rounded-box-1 {
+    background: #dfe6e9;
+    padding: 15px;
+    border-radius: 25px; /* Uniform radius */
+    text-align: center;
+}
+
+.rounded-box-2 {
+    background: #b2bec3;
+    padding: 15px;
+    border-radius: 15px 50px 30px 5px; /* Four individual values */
+    text-align: center;
+}
+
+/* --- Border Image & Background Size --- */
+.border-image-box {
+    border: 15px solid transparent;
+    /* Fallback gradient border if image file isn't present, following property layout from lab */
+    border-image: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4) 30 stretch;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+}
+
+.bg-size-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: 100px 80px; /* Specific background-size property example */
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* --- Form Pseudo-classes (:focus, :required, :valid, :invalid) --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border: 3px solid red;
+    background-color: #e8f5e9; /* Light green tint for neat focus effect */
+    outline: none;
+}
+
+input:required {
+    border: 3px solid blue;
+    background-color: #fffde7; /* Light yellow tint for required fields */
+}
+
+input[type="email"]:invalid {
+    color: red;
+}
+
+input[type="email"]:valid {
+    color: blue;
+}
+
+/* --- Adjacent Sibling Selector & Opacity --- */
+.sibling-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sibling-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.itemName {
+    cursor: pointer;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.itemImg {
+    opacity: 0.2; /* Initial low opacity */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-placeholder {
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Adjacent sibling combinator (+) as outlined in lab instructions */
+.itemName:hover + .itemImg {
+    opacity: 1;
+}
+
+/* --- Striped Table (:nth-child odd/even & Hover) --- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #34495e;
+    color: white;
+}
+
+/* Different colors for odd and even rows */
+.data-table tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+/* Change background color on mouse over for data rows */
+.data-table tr:hover {
+    background-color: #d1ecf1 !important;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+}

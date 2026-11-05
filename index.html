@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex.No: 04 - Webpage Design Using Advanced CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="multi-bg-header">
+        <h1>Advanced CSS3 Webpage Design</h1>
+        <p>Exploring Gradients, Shadows, Rounded Corners & Advanced Selectors</p>
+    </header>
+
+    <div class="container">
+
+        <section class="card shadow-box">
+            <h2>Rounded Corners & Box Shadows</h2>
+
+            <p class="rounded-box-1">
+                This box uses a uniform border-radius of 25px.
+            </p>
+
+            <p class="rounded-box-2">
+                This box uses four individual corner values (15px 50px 30px 5px).
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Border Image & Background Size</h2>
+
+            <div class="border-image-box">
+                <p>This element demonstrates CSS3 border-image properties.</p>
+            </div>
+
+            <div id="div1" class="bg-size-box">
+                <p>Custom background-size applied here.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Form Elements & Pseudo-Classes</h2>
+
+            <form>
+                <div class="form-group">
+                    <label>Required Field:</label>
+                    <input type="text" required placeholder="Mandatory field">
+                </div>
+
+                <div class="form-group">
+                    <label>Email Validation:</label>
+                    <input type="email" required placeholder="test@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Focus Field:</label>
+                    <input type="text" placeholder="Click to focus">
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Adjacent Sibling Hover Effect (Opacity)</h2>
+
+            <p>Hover over the item name to reveal the image:</p>
+
+            <table class="sibling-table">
+                <tr>
+                    <td class="itemName">
+                        Hover over this item name (item1)
+                    </td>
+                    <td class="itemImg">
+                        <span class="img-placeholder">[ Image 1 ]</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="itemName">
+                        Hover over this item name (item2)
+                    </td>
+                    <td class="itemImg">
+                        <span class="img-placeholder">[ Image 2 ]</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Striped Table (Odd/Even Rows & Hover)</h2>
+
+            <table class="data-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Property</th>
+                    <th>Category</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>border-radius</td>
+                    <td>Shape</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>background-image</td>
+                    <td>Background</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>box-shadow</td>
+                    <td>Effects</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>opacity</td>
+                    <td>Transparency</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Advanced CSS3 Lab Experiment</p>
+    </footer>
+
+</body>
+</html>
